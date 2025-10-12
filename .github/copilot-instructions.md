@@ -77,8 +77,9 @@ rainbow-sanctuary-report-site/
 
 ### 樣式規範
 - 使用 Tailwind CSS utility classes
-- 遵循現有的色彩系統：
-  - 主色：`soft-gold` (#E8C547)
+- 遵循現有的色彩系統（定義在 `tailwind.config.ts`）：
+  - 主色：`soft-gold` (#D4AF37)
+  - 次要色：`glass-purple` (#3A2E91), `deep-blue` (#0C2E3E)
   - 背景：灰色系（gray-50, gray-100）
   - 文字：深灰色（gray-900, gray-700, gray-600）
 - 響應式設計：優先考慮 mobile-first
@@ -139,8 +140,10 @@ npm run lint         # ESLint 檢查
 
 ### 必要任務
 - [ ] 添加實際試閱圖片到 `public/images/preview/`
-- [ ] 添加 OG 圖片 `public/images/og-image.jpg` (1200x630px)
-- [ ] 更新 `lib/site.config.ts` 的實際網站 URL
+  - qianlong-1.jpg, qianlong-2.jpg
+  - ygf-1.jpg, ygf-2.jpg
+- [ ] 添加 OG 圖片 `public/images/og-image.jpg` (1200x630px)（目前程式碼已引用但檔案不存在）
+- [ ] 確認並更新 `lib/site.config.ts` 的網站 URL（如需要）
 - [ ] 更新 LINE 和 Email 聯繫資訊
 
 ### 選用優化
