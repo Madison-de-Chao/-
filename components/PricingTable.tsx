@@ -1,5 +1,4 @@
 import { PlanData } from '@/lib/content';
-import Link from 'next/link';
 
 interface PricingTableProps {
   plans: PlanData[];
@@ -48,8 +47,8 @@ export default function PricingTable({ plans }: PricingTableProps) {
             ))}
           </ul>
 
-          <Link 
-            href="/pricing"
+          <a 
+            href="https://line.me/your-line"
             className={`block w-full text-center px-6 py-3 rounded-lg font-semibold transition-colors ${
               plan.id === 'full'
                 ? 'bg-soft-gold text-gray-900 hover:bg-yellow-500'
@@ -57,7 +56,7 @@ export default function PricingTable({ plans }: PricingTableProps) {
             }`}
           >
             選擇方案
-          </Link>
+          </a>
         </div>
       ))}
     </div>
